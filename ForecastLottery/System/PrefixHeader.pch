@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  ForecastLottery
+//
+//  Created by Mrr on 16/4/6.
+//  Copyright © 2016年 llisent. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Macros.h"
+
+
+#endif /* PrefixHeader_pch */
