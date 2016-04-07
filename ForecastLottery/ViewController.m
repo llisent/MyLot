@@ -35,7 +35,9 @@
 //    }];
     
     [FLGainDLT getDLTLotteryNumWithCount:20 returnBlock:^(NSArray *arr) {
-        NSLog(@"%@",arr);
+        for (FLSSQModel *model in arr) {
+            NSLog(@"%@",model);
+        }
     }];
 }
 

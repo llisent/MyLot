@@ -8,15 +8,20 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - Wonderful (1.2.0)
+  - YYCategories (1.0):
+    - YYCategories/no-arc (= 1.0)
+  - YYCategories/no-arc (1.0)
 
 DEPENDENCIES:
   - Masonry
   - ReactiveCocoa
   - Wonderful
+  - YYCategories
 
 SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
+  YYCategories: 08fccb29097e711091d828cdf77a2066ad8ba806
 
 COCOAPODS: 0.39.0

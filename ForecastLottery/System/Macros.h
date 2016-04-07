@@ -19,4 +19,7 @@
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
 
+#define TICK   NSDate *startTime = [NSDate date];
+#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow]);
+
 #endif /* Macros_h */

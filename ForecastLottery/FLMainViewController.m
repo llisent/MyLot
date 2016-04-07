@@ -7,8 +7,12 @@
 //
 
 #import "FLMainViewController.h"
+#import "FLSSQCell.h"
+#import "FLSSQModel.h"
 
-@interface FLMainViewController ()
+@interface FLMainViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic ,strong)NSMutableArray *lotteryArray;
 
 @end
 
@@ -16,7 +20,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.lotteryArray = [[NSMutableArray alloc]init];
+    [self creatCostomUI];
+}
+
+- (void)creatCostomUI{
+    self.lotteryTableView.delegate   = self;
+    self.lotteryTableView.dataSource = self;
+    self.lotteryTableView.rowHeight  = 45;
+    [self.lotteryTableView registerNib:[UINib nibWithNibName:@"FLSSQCell" bundle:nil] forCellReuseIdentifier:@"lotteryCell"];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.lotteryArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    FLSSQCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lotteryCell" forIndexPath:indexPath];
+    FLSSQModel *model = self.lotteryArray[indexPath.row];
+    [cell refreshDataWithModel:model];
+    return cell;
+}
+
+- (IBAction)creatLottery:(id)sender {
+    __weak typeof(self)weakSelf = self;
+    [FLGainSSQ getSSQLotteryNumWithCount:5 returnBlock:^(NSArray *modelArr) {
+        [weakSelf.lotteryArray addObjectsFromArray:modelArr];
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [weakSelf.lotteryTableView reloadData];
+        });
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

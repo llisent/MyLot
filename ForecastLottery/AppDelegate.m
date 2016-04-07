@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FLMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    FLMainViewController *vc       = [[FLMainViewController alloc]init];
+    self.window                    = [[UIWindow alloc]initWithFrame:ScreenBonds];
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface FLMainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *leftBtn;
+@property (weak, nonatomic) IBOutlet UIButton *midBtn;
+@property (weak, nonatomic) IBOutlet UIButton *rightBtn;
 
+@property (weak, nonatomic) IBOutlet UITableView *lotteryTableView;
 @end

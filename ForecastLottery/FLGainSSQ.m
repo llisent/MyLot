@@ -13,7 +13,7 @@
 
 + (void)getSSQLotteryNumWithCount:(NSInteger)count
                       returnBlock:(void (^)(NSArray *))success{
-    
+    TICK
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:count];
     NSMutableArray *redSet = [NSMutableArray arrayWithCapacity:33];
     //创建模型池
@@ -56,11 +56,13 @@
             model.red_5 = resultArray[4];
             model.red_6 = resultArray[5];
 
-            model.blue_1 = [NSNumber numberWithInt:arc4random()%17];
+            model.blue_1 = [NSNumber numberWithInt:arc4random()%16 + 1];
             [result addObject:model];
         }
         success(result);
+        TOCK
     });
+    
 }
 
 @end
