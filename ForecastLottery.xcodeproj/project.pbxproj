@@ -33,6 +33,7 @@
 		6AC66B501CB7B3290058DEF5 /* FLLotteryResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B4E1CB7B3290058DEF5 /* FLLotteryResultViewController.m */; };
 		6AC66B511CB7B3290058DEF5 /* FLLotteryResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC66B4F1CB7B3290058DEF5 /* FLLotteryResultViewController.xib */; };
 		6AC66B541CB7B4C80058DEF5 /* FLEasyExpiry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */; };
+		6AC66B561CB7BB440058DEF5 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 6AC66B551CB7BB440058DEF5 /* File */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		6AC66B4F1CB7B3290058DEF5 /* FLLotteryResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLLotteryResultViewController.xib; sourceTree = "<group>"; };
 		6AC66B521CB7B4C80058DEF5 /* FLEasyExpiry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEasyExpiry.h; sourceTree = "<group>"; };
 		6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEasyExpiry.m; sourceTree = "<group>"; };
+		6AC66B551CB7BB440058DEF5 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		6AC82BAD1CB5159D008FD43F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C20B81BA3976B5A24486A2DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F818FF9DB3B543E62CE48A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				6A52393E1CB6068F0095F3B1 /* FLMainTools.m */,
 				6AC66B521CB7B4C80058DEF5 /* FLEasyExpiry.h */,
 				6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */,
+				6AC66B551CB7BB440058DEF5 /* File */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				6A40F4F31CB510CE0044A62A /* FLMainViewController.xib in Resources */,
 				6A52979F1CB7575000580DD4 /* FLSettingViewController.xib in Resources */,
 				6AC66B511CB7B3290058DEF5 /* FLLotteryResultViewController.xib in Resources */,
+				6AC66B561CB7BB440058DEF5 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
