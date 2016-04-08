@@ -28,39 +28,38 @@
     NSMutableSet *expriySet = [NSMutableSet setWithArray:selfArr];
     [expriySet addObjectsFromArray:resultArr];
     
-    NSInteger redResult = 10 - expriySet.count;
-    NSInteger blueResult;
+    NSUInteger redResult = 10 - expriySet.count;
+    NSUInteger blueResult;
     NSComparisonResult blueCompare = [selfModel.blue_1 compare:resultModel.blue_1];
+    
     if (blueCompare != NSOrderedSame) {
         blueResult = 0;
     }else{
         blueResult = 1;
     }
-    switch (redResult) {
-        case 0:
-            
-            break;
-        case 1:
-            
-            break;
-        case 2:
-            
-            break;
-        case 3:
-            
-            break;
-        case 4:
-            
-            break;
-        case 5:
-            
-            break;
-        case 6:
-            
-            break;
-            
-        default:
-            break;
+    
+    if (blueResult == 0) {
+        if (redResult < 4) {
+            NSLog(@"无");
+        }else if (redResult == 4){
+            NSLog(@"10");
+        }else if (redResult == 5){
+            NSLog(@"200");
+        }else{
+            NSLog(@"ER");
+        }
+    }else{
+        if (blueResult < 3) {
+            NSLog(@"5");
+        }else if (blueResult == 3){
+            NSLog(@"10");
+        }else if (blueResult == 4){
+            NSLog(@"200");
+        }else if (blueResult == 5){
+            NSLog(@"3000");
+        }else{
+            NSLog(@"YI");
+        }
     }
 }
 
