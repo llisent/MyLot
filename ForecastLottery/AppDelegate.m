@@ -17,6 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance]setTitleTextAttributes:@{
+                                                          NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue" size:18],
+                                                          NSForegroundColorAttributeName:[UIColor whiteColor]
+                                                          }];
+    
+    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
+    
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.188 green:0.196 blue:0.212 alpha:1.000]];
     FLMainViewController *vc       = [[FLMainViewController alloc]init];
     self.window                    = [[UIWindow alloc]initWithFrame:ScreenBonds];
     self.window.rootViewController = vc;

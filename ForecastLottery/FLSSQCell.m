@@ -38,10 +38,10 @@
 }
 
 - (void)copyLotteryNum{
-    NSLog(@"123");
+    NSLog(@"长按复制");
 }
 
-- (void)refreshDataWithModel:(FLSSQModel *)model{
+- (void)refreshDataWithModel:(FLSSQModel *)model rowNum:(NSInteger)rank{
     TICK
     self.mr1.text = [model.red_1 numberToString];
     self.mr2.text = [model.red_2 numberToString];

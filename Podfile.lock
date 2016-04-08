@@ -1,5 +1,28 @@
 PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - Masonry (0.6.4)
+  - MJExtension (3.0.10)
+  - MJRefresh (3.1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -13,13 +36,19 @@ PODS:
   - YYCategories/no-arc (1.0)
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
   - Masonry
+  - MJExtension
+  - MJRefresh
   - ReactiveCocoa
   - Wonderful
   - YYCategories
 
 SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
   YYCategories: 08fccb29097e711091d828cdf77a2066ad8ba806

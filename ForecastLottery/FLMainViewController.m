@@ -9,6 +9,7 @@
 #import "FLMainViewController.h"
 #import "FLSSQCell.h"
 #import "FLSSQModel.h"
+#import "FLSettingViewController.h"
 
 @interface FLMainViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -24,10 +25,19 @@
     [self creatCostomUI];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [[SMNetWorkManager sharedInstence]getLottoryWithType:@"ssq" Success:^(long status, NSString *err, NSDictionary *dic) {
+        NSLog(@"%@",dic[@"openCode"]);
+    }];
+}
+
 - (void)creatCostomUI{
-    self.lotteryTableView.delegate   = self;
-    self.lotteryTableView.dataSource = self;
-    self.lotteryTableView.rowHeight  = 45;
+    self.view.backgroundColor             = [UIColor colorWithRed:0.188 green:0.596 blue:0.918 alpha:1.000];
+    self.lotteryTableView.backgroundColor = [UIColor clearColor];
+    self.lotteryTableView.delegate        = self;
+    self.lotteryTableView.dataSource      = self;
+    self.lotteryTableView.rowHeight       = 45;
+    self.lotteryTableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
     [self.lotteryTableView registerNib:[UINib nibWithNibName:@"FLSSQCell" bundle:nil] forCellReuseIdentifier:@"lotteryCell"];
 }
 
@@ -36,9 +46,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FLSSQCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lotteryCell" forIndexPath:indexPath];
-    FLSSQModel *model = self.lotteryArray[indexPath.row];
-    [cell refreshDataWithModel:model];
+    FLSSQCell *cell      = [tableView dequeueReusableCellWithIdentifier:@"lotteryCell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor clearColor];
+    FLSSQModel *model    = self.lotteryArray[indexPath.row];
+    [cell refreshDataWithModel:model rowNum:indexPath.row];
     return cell;
 }
 
@@ -50,6 +61,12 @@
             [weakSelf.lotteryTableView reloadData];
         });
     }];
+}
+- (IBAction)pushToSetting:(id)sender {
+    FLSettingViewController *vc = [[FLSettingViewController alloc]init];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
+    navi.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:navi animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

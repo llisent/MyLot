@@ -10,6 +10,7 @@
 
 @interface NSNumber (FLPrint)
 
+//作为模型中的元素输出使用
 - (NSString *)numberToString;
 
 @end

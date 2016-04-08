@@ -18,6 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *mr6;
 @property (weak, nonatomic) IBOutlet UILabel *mb1;
 
-- (void)refreshDataWithModel:(FLSSQModel *)model;
+- (void)refreshDataWithModel:(FLSSQModel *)model rowNum:(NSInteger)rank;
 
 @end

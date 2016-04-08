@@ -14,6 +14,10 @@
 		6A40F4F31CB510CE0044A62A /* FLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A40F4F11CB510CE0044A62A /* FLMainViewController.xib */; };
 		6A52393B1CB602450095F3B1 /* NSNumber+FLPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A52393A1CB602450095F3B1 /* NSNumber+FLPrint.m */; };
 		6A52393F1CB6068F0095F3B1 /* FLMainTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A52393E1CB6068F0095F3B1 /* FLMainTools.m */; };
+		6A5297991CB7569E00580DD4 /* FLDLTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5297971CB7569E00580DD4 /* FLDLTCell.m */; };
+		6A52979A1CB7569E00580DD4 /* FLDLTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A5297981CB7569E00580DD4 /* FLDLTCell.xib */; };
+		6A52979E1CB7575000580DD4 /* FLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A52979C1CB7575000580DD4 /* FLSettingViewController.m */; };
+		6A52979F1CB7575000580DD4 /* FLSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A52979D1CB7575000580DD4 /* FLSettingViewController.xib */; };
 		6A5AF4641CB4EDA100DE1947 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5AF4631CB4EDA100DE1947 /* main.m */; };
 		6A5AF4671CB4EDA100DE1947 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5AF4661CB4EDA100DE1947 /* AppDelegate.m */; };
 		6A5AF46A1CB4EDA100DE1947 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5AF4691CB4EDA100DE1947 /* ViewController.m */; };
@@ -24,6 +28,8 @@
 		6A5AF4811CB4EF3700DE1947 /* FLSSQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5AF4801CB4EF3700DE1947 /* FLSSQModel.m */; };
 		6AB5B3AA1CB5199D00EE14E4 /* FLSSQCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB5B3A81CB5199D00EE14E4 /* FLSSQCell.m */; };
 		6AB5B3AB1CB5199D00EE14E4 /* FLSSQCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB5B3A91CB5199D00EE14E4 /* FLSSQCell.xib */; };
+		6AC66B491CB788950058DEF5 /* SMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B481CB788950058DEF5 /* SMNetWorkManager.m */; };
+		6AC66B4C1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B4B1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,12 @@
 		6A52393A1CB602450095F3B1 /* NSNumber+FLPrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+FLPrint.m"; sourceTree = "<group>"; };
 		6A52393D1CB6068F0095F3B1 /* FLMainTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMainTools.h; sourceTree = "<group>"; };
 		6A52393E1CB6068F0095F3B1 /* FLMainTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMainTools.m; sourceTree = "<group>"; };
+		6A5297961CB7569E00580DD4 /* FLDLTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDLTCell.h; sourceTree = "<group>"; };
+		6A5297971CB7569E00580DD4 /* FLDLTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDLTCell.m; sourceTree = "<group>"; };
+		6A5297981CB7569E00580DD4 /* FLDLTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLDLTCell.xib; sourceTree = "<group>"; };
+		6A52979B1CB7575000580DD4 /* FLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSettingViewController.h; sourceTree = "<group>"; };
+		6A52979C1CB7575000580DD4 /* FLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSettingViewController.m; sourceTree = "<group>"; };
+		6A52979D1CB7575000580DD4 /* FLSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLSettingViewController.xib; sourceTree = "<group>"; };
 		6A5AF45F1CB4EDA100DE1947 /* ForecastLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForecastLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5AF4631CB4EDA100DE1947 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A5AF4651CB4EDA100DE1947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +69,10 @@
 		6AB5B3A71CB5199D00EE14E4 /* FLSSQCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSSQCell.h; sourceTree = "<group>"; };
 		6AB5B3A81CB5199D00EE14E4 /* FLSSQCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSSQCell.m; sourceTree = "<group>"; };
 		6AB5B3A91CB5199D00EE14E4 /* FLSSQCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLSSQCell.xib; sourceTree = "<group>"; };
+		6AC66B471CB788950058DEF5 /* SMNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMNetWorkManager.h; sourceTree = "<group>"; };
+		6AC66B481CB788950058DEF5 /* SMNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMNetWorkManager.m; sourceTree = "<group>"; };
+		6AC66B4A1CB78C2C0058DEF5 /* NSString+FLConversionToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FLConversionToModel.h"; sourceTree = "<group>"; };
+		6AC66B4B1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLConversionToModel.m"; sourceTree = "<group>"; };
 		6AC82BAD1CB5159D008FD43F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C20B81BA3976B5A24486A2DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F818FF9DB3B543E62CE48A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +96,9 @@
 				6A40F4EF1CB510CE0044A62A /* FLMainViewController.h */,
 				6A40F4F01CB510CE0044A62A /* FLMainViewController.m */,
 				6A40F4F11CB510CE0044A62A /* FLMainViewController.xib */,
+				6A52979B1CB7575000580DD4 /* FLSettingViewController.h */,
+				6A52979C1CB7575000580DD4 /* FLSettingViewController.m */,
+				6A52979D1CB7575000580DD4 /* FLSettingViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -89,6 +108,8 @@
 			children = (
 				6A5239391CB602450095F3B1 /* NSNumber+FLPrint.h */,
 				6A52393A1CB602450095F3B1 /* NSNumber+FLPrint.m */,
+				6AC66B4A1CB78C2C0058DEF5 /* NSString+FLConversionToModel.h */,
+				6AC66B4B1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -100,6 +121,15 @@
 				6A52393E1CB6068F0095F3B1 /* FLMainTools.m */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		6A579C6F1CB7837E00DC7992 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				6AC66B471CB788950058DEF5 /* SMNetWorkManager.h */,
+				6AC66B481CB788950058DEF5 /* SMNetWorkManager.m */,
+			);
+			name = NetWork;
 			sourceTree = "<group>";
 		};
 		6A5AF4561CB4EDA000DE1947 = {
@@ -123,6 +153,7 @@
 		6A5AF4611CB4EDA100DE1947 /* ForecastLottery */ = {
 			isa = PBXGroup;
 			children = (
+				6A579C6F1CB7837E00DC7992 /* NetWork */,
 				6A52393C1CB6065B0095F3B1 /* Tools */,
 				6A5239381CB6020C0095F3B1 /* Category */,
 				6A5AF47E1CB4EF2800DE1947 /* Model */,
@@ -196,6 +227,9 @@
 				6AB5B3A71CB5199D00EE14E4 /* FLSSQCell.h */,
 				6AB5B3A81CB5199D00EE14E4 /* FLSSQCell.m */,
 				6AB5B3A91CB5199D00EE14E4 /* FLSSQCell.xib */,
+				6A5297961CB7569E00580DD4 /* FLDLTCell.h */,
+				6A5297971CB7569E00580DD4 /* FLDLTCell.m */,
+				6A5297981CB7569E00580DD4 /* FLDLTCell.xib */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -283,7 +317,9 @@
 				6AB5B3AB1CB5199D00EE14E4 /* FLSSQCell.xib in Resources */,
 				6A5AF46F1CB4EDA100DE1947 /* Assets.xcassets in Resources */,
 				6A5AF46D1CB4EDA100DE1947 /* Main.storyboard in Resources */,
+				6A52979A1CB7569E00580DD4 /* FLDLTCell.xib in Resources */,
 				6A40F4F31CB510CE0044A62A /* FLMainViewController.xib in Resources */,
+				6A52979F1CB7575000580DD4 /* FLSettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +382,13 @@
 				6AB5B3AA1CB5199D00EE14E4 /* FLSSQCell.m in Sources */,
 				6A52393F1CB6068F0095F3B1 /* FLMainTools.m in Sources */,
 				6A5AF4811CB4EF3700DE1947 /* FLSSQModel.m in Sources */,
+				6AC66B491CB788950058DEF5 /* SMNetWorkManager.m in Sources */,
+				6A5297991CB7569E00580DD4 /* FLDLTCell.m in Sources */,
 				6A40F4ED1CB50BD00044A62A /* FLGainDLT.m in Sources */,
 				6A5AF46A1CB4EDA100DE1947 /* ViewController.m in Sources */,
+				6AC66B4C1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m in Sources */,
 				6A5AF4671CB4EDA100DE1947 /* AppDelegate.m in Sources */,
+				6A52979E1CB7575000580DD4 /* FLSettingViewController.m in Sources */,
 				6A5AF47D1CB4EE7600DE1947 /* FLGainSSQ.m in Sources */,
 				6A5AF4641CB4EDA100DE1947 /* main.m in Sources */,
 				6A40F4F21CB510CE0044A62A /* FLMainViewController.m in Sources */,
@@ -470,6 +510,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = /Users/mrr/MyLot/ForecastLottery/System/PrefixHeader.pch;
 				INFOPLIST_FILE = ForecastLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lnzsbks.ForecastLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +525,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = /Users/mrr/MyLot/ForecastLottery/System/PrefixHeader.pch;
 				INFOPLIST_FILE = ForecastLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lnzsbks.ForecastLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
