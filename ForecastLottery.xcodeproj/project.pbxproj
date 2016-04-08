@@ -30,6 +30,9 @@
 		6AB5B3AB1CB5199D00EE14E4 /* FLSSQCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB5B3A91CB5199D00EE14E4 /* FLSSQCell.xib */; };
 		6AC66B491CB788950058DEF5 /* SMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B481CB788950058DEF5 /* SMNetWorkManager.m */; };
 		6AC66B4C1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B4B1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m */; };
+		6AC66B501CB7B3290058DEF5 /* FLLotteryResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B4E1CB7B3290058DEF5 /* FLLotteryResultViewController.m */; };
+		6AC66B511CB7B3290058DEF5 /* FLLotteryResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC66B4F1CB7B3290058DEF5 /* FLLotteryResultViewController.xib */; };
+		6AC66B541CB7B4C80058DEF5 /* FLEasyExpiry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,11 @@
 		6AC66B481CB788950058DEF5 /* SMNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMNetWorkManager.m; sourceTree = "<group>"; };
 		6AC66B4A1CB78C2C0058DEF5 /* NSString+FLConversionToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FLConversionToModel.h"; sourceTree = "<group>"; };
 		6AC66B4B1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLConversionToModel.m"; sourceTree = "<group>"; };
+		6AC66B4D1CB7B3290058DEF5 /* FLLotteryResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLotteryResultViewController.h; sourceTree = "<group>"; };
+		6AC66B4E1CB7B3290058DEF5 /* FLLotteryResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLotteryResultViewController.m; sourceTree = "<group>"; };
+		6AC66B4F1CB7B3290058DEF5 /* FLLotteryResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLLotteryResultViewController.xib; sourceTree = "<group>"; };
+		6AC66B521CB7B4C80058DEF5 /* FLEasyExpiry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEasyExpiry.h; sourceTree = "<group>"; };
+		6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEasyExpiry.m; sourceTree = "<group>"; };
 		6AC82BAD1CB5159D008FD43F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C20B81BA3976B5A24486A2DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F818FF9DB3B543E62CE48A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +107,9 @@
 				6A52979B1CB7575000580DD4 /* FLSettingViewController.h */,
 				6A52979C1CB7575000580DD4 /* FLSettingViewController.m */,
 				6A52979D1CB7575000580DD4 /* FLSettingViewController.xib */,
+				6AC66B4D1CB7B3290058DEF5 /* FLLotteryResultViewController.h */,
+				6AC66B4E1CB7B3290058DEF5 /* FLLotteryResultViewController.m */,
+				6AC66B4F1CB7B3290058DEF5 /* FLLotteryResultViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +130,8 @@
 			children = (
 				6A52393D1CB6068F0095F3B1 /* FLMainTools.h */,
 				6A52393E1CB6068F0095F3B1 /* FLMainTools.m */,
+				6AC66B521CB7B4C80058DEF5 /* FLEasyExpiry.h */,
+				6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -320,6 +333,7 @@
 				6A52979A1CB7569E00580DD4 /* FLDLTCell.xib in Resources */,
 				6A40F4F31CB510CE0044A62A /* FLMainViewController.xib in Resources */,
 				6A52979F1CB7575000580DD4 /* FLSettingViewController.xib in Resources */,
+				6AC66B511CB7B3290058DEF5 /* FLLotteryResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +398,7 @@
 				6A5AF4811CB4EF3700DE1947 /* FLSSQModel.m in Sources */,
 				6AC66B491CB788950058DEF5 /* SMNetWorkManager.m in Sources */,
 				6A5297991CB7569E00580DD4 /* FLDLTCell.m in Sources */,
+				6AC66B541CB7B4C80058DEF5 /* FLEasyExpiry.m in Sources */,
 				6A40F4ED1CB50BD00044A62A /* FLGainDLT.m in Sources */,
 				6A5AF46A1CB4EDA100DE1947 /* ViewController.m in Sources */,
 				6AC66B4C1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m in Sources */,
@@ -391,6 +406,7 @@
 				6A52979E1CB7575000580DD4 /* FLSettingViewController.m in Sources */,
 				6A5AF47D1CB4EE7600DE1947 /* FLGainSSQ.m in Sources */,
 				6A5AF4641CB4EDA100DE1947 /* main.m in Sources */,
+				6AC66B501CB7B3290058DEF5 /* FLLotteryResultViewController.m in Sources */,
 				6A40F4F21CB510CE0044A62A /* FLMainViewController.m in Sources */,
 				6A52393B1CB602450095F3B1 /* NSNumber+FLPrint.m in Sources */,
 			);

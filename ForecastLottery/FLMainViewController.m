@@ -26,8 +26,12 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    [[SMNetWorkManager sharedInstence]getLottoryWithType:@"ssq" Success:^(long status, NSString *err, NSDictionary *dic) {
-        NSLog(@"%@",dic[@"openCode"]);
+    [[SMNetWorkManager sharedInstence]getLottoryWithType:@"ssq" Success:^(long status, NSString *err, NSArray *arr) {
+        for (NSDictionary *dic in arr) {
+            NSString *code = dic[@"openCode"];
+            FLSSQModel *model = [code conversionToSSQ];
+            NSLog(@"%@",[model.red_1 numberToString]);
+        }
     }];
 }
 

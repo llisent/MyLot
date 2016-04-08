@@ -10,7 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 
 
-typedef void(^SuccessWithErrorBlock)(long status, NSString *err, NSDictionary *dic);
+typedef void(^SuccessWithErrorBlock)(long status, NSString *err, NSArray *arr);
 
 
 

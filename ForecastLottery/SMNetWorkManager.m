@@ -34,14 +34,20 @@ NSString * const apikey = @"5b77127a000f4bbf83794ce728eb2dd4";
     NSString *date                 = [dateFormatter stringFromDate:[NSDate date]];
     NSString *appid                = @"17640";
 
-    NSDictionary *par = [NSDictionary dictionaryWithObjects:@[appid,apikey,date,type,@"200"]
+    NSDictionary *par = [NSDictionary dictionaryWithObjects:@[appid,apikey,date,type,@"100"]
                                                     forKeys:@[@"showapi_appid",@"showapi_sign",@"showapi_timestamp",@"code",@"count"]];
 
     NSString *url                  = @"https://route.showapi.com/44-2";
     
     [_networkingManager POST:url parameters:par success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-        success(1,nil,responseObject);
-        
+        if ([responseObject[@"showapi_res_code"] isEqual:@0]) {
+            //成功
+            NSArray *lotteryResult = responseObject[@"showapi_res_body"][@"result"];
+            success(1,responseObject[@"showapi_res_error"],lotteryResult);
+            
+        }else{
+
+        }
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
         NSLog(@"%@",error.localizedDescription);
     }];

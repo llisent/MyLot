@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD5-Au-Ju4">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD5-Au-Ju4">
                     <rect key="frame" x="294" y="542" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="18" id="4Cf-Os-NLs"/>
@@ -30,7 +30,7 @@
                         <action selector="pushToSetting:" destination="-1" eventType="touchUpInside" id="9lJ-0Q-oNB"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bP-jm-GPw">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bP-jm-GPw">
                     <rect key="frame" x="8" y="542" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="EDa-L8-Y5M"/>
@@ -38,7 +38,7 @@
                     </constraints>
                     <state key="normal" title="A"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGb-rG-lck">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGb-rG-lck">
                     <rect key="frame" x="151" y="542" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="5Du-ng-piY"/>
