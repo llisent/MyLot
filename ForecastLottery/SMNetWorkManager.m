@@ -53,7 +53,14 @@ NSString * const apikey = @"5b77127a000f4bbf83794ce728eb2dd4";
     }];
 }
 
-
+- (void)getNetEaseLotteryResult:(SuccessWithErrorBlock)success{
+    [_networkingManager GET:@"http://api.caipiao.163.com/award_home.html" parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        NSArray *arr = responseObject[@"data"];
+        success(1,nil,arr);
+    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+        
+    }];
+}
 
 
 

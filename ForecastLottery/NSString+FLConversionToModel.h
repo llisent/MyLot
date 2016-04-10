@@ -16,5 +16,8 @@
 - (FLSSQModel *)conversionToSSQ;
 - (FLDLTModel *)conversionToDLT;
 
+//去除字符
+- (NSString *)removeChar;
+
 
 @end

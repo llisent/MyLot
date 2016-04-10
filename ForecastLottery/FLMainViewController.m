@@ -10,6 +10,7 @@
 #import "FLSSQCell.h"
 #import "FLSSQModel.h"
 #import "FLSettingViewController.h"
+#import "FLLotteryResultViewController.h"
 
 @interface FLMainViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -55,6 +56,12 @@
     FLSSQModel *model    = self.lotteryArray[indexPath.row];
     [cell refreshDataWithModel:model rowNum:indexPath.row];
     return cell;
+}
+- (IBAction)LotteryHistory:(id)sender {
+    FLLotteryResultViewController *vc = [[FLLotteryResultViewController alloc]init];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
+    navi.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:navi animated:YES completion:nil];
 }
 
 - (IBAction)creatLottery:(id)sender {

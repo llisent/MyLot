@@ -24,4 +24,7 @@ typedef void(^SuccessWithErrorBlock)(long status, NSString *err, NSArray *arr);
 - (void)getLottoryWithType:(NSString *)type
                    Success:(SuccessWithErrorBlock)success;
 
+//获取网易开奖信息
+- (void)getNetEaseLotteryResult:(SuccessWithErrorBlock)success;
+
 @end

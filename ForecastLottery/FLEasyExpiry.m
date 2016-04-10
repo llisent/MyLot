@@ -46,7 +46,7 @@
         }else if (redResult == 5){
             NSLog(@"200");
         }else{
-            NSLog(@"ER");
+            NSLog(@"二等奖");
         }
     }else{
         if (blueResult < 3) {
@@ -58,7 +58,7 @@
         }else if (blueResult == 5){
             NSLog(@"3000");
         }else{
-            NSLog(@"YI");
+            NSLog(@"一等奖");
         }
     }
 }

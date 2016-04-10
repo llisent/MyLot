@@ -34,6 +34,9 @@
 		6AC66B511CB7B3290058DEF5 /* FLLotteryResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC66B4F1CB7B3290058DEF5 /* FLLotteryResultViewController.xib */; };
 		6AC66B541CB7B4C80058DEF5 /* FLEasyExpiry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */; };
 		6AC66B561CB7BB440058DEF5 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 6AC66B551CB7BB440058DEF5 /* File */; };
+		DD2E3F651CB91699008BDF83 /* FLLotteryListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E3F641CB91699008BDF83 /* FLLotteryListVC.m */; };
+		DD7904E61CB8A54000C151B7 /* FLLotteryResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7904E41CB8A54000C151B7 /* FLLotteryResultCell.m */; };
+		DD7904E71CB8A54000C151B7 /* FLLotteryResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7904E51CB8A54000C151B7 /* FLLotteryResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +88,11 @@
 		6AC66B551CB7BB440058DEF5 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		6AC82BAD1CB5159D008FD43F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C20B81BA3976B5A24486A2DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DD2E3F631CB91699008BDF83 /* FLLotteryListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLotteryListVC.h; sourceTree = "<group>"; };
+		DD2E3F641CB91699008BDF83 /* FLLotteryListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLotteryListVC.m; sourceTree = "<group>"; };
+		DD7904E31CB8A54000C151B7 /* FLLotteryResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLotteryResultCell.h; sourceTree = "<group>"; };
+		DD7904E41CB8A54000C151B7 /* FLLotteryResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLotteryResultCell.m; sourceTree = "<group>"; };
+		DD7904E51CB8A54000C151B7 /* FLLotteryResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLLotteryResultCell.xib; sourceTree = "<group>"; };
 		F818FF9DB3B543E62CE48A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,15 +111,9 @@
 		6A40F4EE1CB510B60044A62A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6A40F4EF1CB510CE0044A62A /* FLMainViewController.h */,
-				6A40F4F01CB510CE0044A62A /* FLMainViewController.m */,
-				6A40F4F11CB510CE0044A62A /* FLMainViewController.xib */,
-				6A52979B1CB7575000580DD4 /* FLSettingViewController.h */,
-				6A52979C1CB7575000580DD4 /* FLSettingViewController.m */,
-				6A52979D1CB7575000580DD4 /* FLSettingViewController.xib */,
-				6AC66B4D1CB7B3290058DEF5 /* FLLotteryResultViewController.h */,
-				6AC66B4E1CB7B3290058DEF5 /* FLLotteryResultViewController.m */,
-				6AC66B4F1CB7B3290058DEF5 /* FLLotteryResultViewController.xib */,
+				DD2E3F621CB91633008BDF83 /* ResultViewController */,
+				DD2E3F611CB91624008BDF83 /* SettingViewController */,
+				DD2E3F601CB91610008BDF83 /* MainViewController */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -130,10 +132,9 @@
 		6A52393C1CB6065B0095F3B1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				6A52393D1CB6068F0095F3B1 /* FLMainTools.h */,
-				6A52393E1CB6068F0095F3B1 /* FLMainTools.m */,
-				6AC66B521CB7B4C80058DEF5 /* FLEasyExpiry.h */,
-				6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */,
+				DD7904E21CB8A2B000C151B7 /* OtherTools */,
+				DD7904E11CB8A29000C151B7 /* CheckResult */,
+				6A5AF47A1CB4EE3000DE1947 /* GainLottery */,
 				6AC66B551CB7BB440058DEF5 /* File */,
 			);
 			name = Tools;
@@ -175,7 +176,6 @@
 				6A5AF47E1CB4EF2800DE1947 /* Model */,
 				6AB5B3A51CB517CE00EE14E4 /* Views */,
 				6A40F4EE1CB510B60044A62A /* Controllers */,
-				6A5AF47A1CB4EE3000DE1947 /* GainLottery */,
 				6A5AF4791CB4EDE500DE1947 /* System */,
 				6A5AF4621CB4EDA100DE1947 /* Supporting Files */,
 			);
@@ -246,6 +246,9 @@
 				6A5297961CB7569E00580DD4 /* FLDLTCell.h */,
 				6A5297971CB7569E00580DD4 /* FLDLTCell.m */,
 				6A5297981CB7569E00580DD4 /* FLDLTCell.xib */,
+				DD7904E31CB8A54000C151B7 /* FLLotteryResultCell.h */,
+				DD7904E41CB8A54000C151B7 /* FLLotteryResultCell.m */,
+				DD7904E51CB8A54000C151B7 /* FLLotteryResultCell.xib */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -265,6 +268,56 @@
 				F818FF9DB3B543E62CE48A3E /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD2E3F601CB91610008BDF83 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A40F4EF1CB510CE0044A62A /* FLMainViewController.h */,
+				6A40F4F01CB510CE0044A62A /* FLMainViewController.m */,
+				6A40F4F11CB510CE0044A62A /* FLMainViewController.xib */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		DD2E3F611CB91624008BDF83 /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A52979B1CB7575000580DD4 /* FLSettingViewController.h */,
+				6A52979C1CB7575000580DD4 /* FLSettingViewController.m */,
+				6A52979D1CB7575000580DD4 /* FLSettingViewController.xib */,
+			);
+			name = SettingViewController;
+			sourceTree = "<group>";
+		};
+		DD2E3F621CB91633008BDF83 /* ResultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6AC66B4D1CB7B3290058DEF5 /* FLLotteryResultViewController.h */,
+				6AC66B4E1CB7B3290058DEF5 /* FLLotteryResultViewController.m */,
+				6AC66B4F1CB7B3290058DEF5 /* FLLotteryResultViewController.xib */,
+				DD2E3F631CB91699008BDF83 /* FLLotteryListVC.h */,
+				DD2E3F641CB91699008BDF83 /* FLLotteryListVC.m */,
+			);
+			name = ResultViewController;
+			sourceTree = "<group>";
+		};
+		DD7904E11CB8A29000C151B7 /* CheckResult */ = {
+			isa = PBXGroup;
+			children = (
+				6AC66B521CB7B4C80058DEF5 /* FLEasyExpiry.h */,
+				6AC66B531CB7B4C80058DEF5 /* FLEasyExpiry.m */,
+			);
+			name = CheckResult;
+			sourceTree = "<group>";
+		};
+		DD7904E21CB8A2B000C151B7 /* OtherTools */ = {
+			isa = PBXGroup;
+			children = (
+				6A52393D1CB6068F0095F3B1 /* FLMainTools.h */,
+				6A52393E1CB6068F0095F3B1 /* FLMainTools.m */,
+			);
+			name = OtherTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +384,7 @@
 			files = (
 				6A5AF4721CB4EDA100DE1947 /* LaunchScreen.storyboard in Resources */,
 				6AB5B3AB1CB5199D00EE14E4 /* FLSSQCell.xib in Resources */,
+				DD7904E71CB8A54000C151B7 /* FLLotteryResultCell.xib in Resources */,
 				6A5AF46F1CB4EDA100DE1947 /* Assets.xcassets in Resources */,
 				6A5AF46D1CB4EDA100DE1947 /* Main.storyboard in Resources */,
 				6A52979A1CB7569E00580DD4 /* FLDLTCell.xib in Resources */,
@@ -404,6 +458,7 @@
 				6A5297991CB7569E00580DD4 /* FLDLTCell.m in Sources */,
 				6AC66B541CB7B4C80058DEF5 /* FLEasyExpiry.m in Sources */,
 				6A40F4ED1CB50BD00044A62A /* FLGainDLT.m in Sources */,
+				DD7904E61CB8A54000C151B7 /* FLLotteryResultCell.m in Sources */,
 				6A5AF46A1CB4EDA100DE1947 /* ViewController.m in Sources */,
 				6AC66B4C1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m in Sources */,
 				6A5AF4671CB4EDA100DE1947 /* AppDelegate.m in Sources */,
@@ -413,6 +468,7 @@
 				6AC66B501CB7B3290058DEF5 /* FLLotteryResultViewController.m in Sources */,
 				6A40F4F21CB510CE0044A62A /* FLMainViewController.m in Sources */,
 				6A52393B1CB602450095F3B1 /* NSNumber+FLPrint.m in Sources */,
+				DD2E3F651CB91699008BDF83 /* FLLotteryListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = /Users/mrr/MyLot/ForecastLottery/System/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/llisent/MyLot/ForecastLottery/System/PrefixHeader.pch;
 				INFOPLIST_FILE = ForecastLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -543,7 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = /Users/mrr/MyLot/ForecastLottery/System/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/llisent/MyLot/ForecastLottery/System/PrefixHeader.pch;
 				INFOPLIST_FILE = ForecastLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

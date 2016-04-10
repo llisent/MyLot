@@ -80,4 +80,11 @@
     return model;
 }
 
+- (NSString *)removeChar{
+    NSString *str = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    str           = [str stringByReplacingOccurrencesOfString:@":" withString:@""];
+    str           = [str stringByReplacingOccurrencesOfString:@"+" withString:@""];
+    return str;
+}
+
 @end
