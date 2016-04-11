@@ -58,7 +58,7 @@ NSString * const apikey = @"5b77127a000f4bbf83794ce728eb2dd4";
         NSArray *arr = responseObject[@"data"];
         success(1,nil,arr);
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-        
+        NSLog(@"%@",error.localizedDescription);
     }];
 }
 

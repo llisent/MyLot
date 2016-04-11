@@ -42,7 +42,6 @@
 }
 
 - (void)refreshDataWithModel:(FLSSQModel *)model rowNum:(NSInteger)rank{
-    TICK
     self.mr1.text = [model.red_1 numberToString];
     self.mr2.text = [model.red_2 numberToString];
     self.mr3.text = [model.red_3 numberToString];
@@ -50,7 +49,6 @@
     self.mr5.text = [model.red_5 numberToString];
     self.mr6.text = [model.red_6 numberToString];
     self.mb1.text = [model.blue_1 numberToString];
-    TOCK
 }
 
 - (void)creatConstomUIWith:(UIView *)view{

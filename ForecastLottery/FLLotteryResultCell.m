@@ -14,6 +14,17 @@
     NSArray *viewsArr = @[self.firstItem,self.secondItem,self.thirdItem,self.fourthItem,self.fifthItem,self.sixthItem,self.seventhItem];
     [self costomUIWithView:viewsArr];
     self.backgroundColor = [UIColor colorWithRed:0.220 green:0.227 blue:0.263 alpha:1.000];
+    UITapGestureRecognizer *get = [[UITapGestureRecognizer alloc]initWithActionBlock:^(id  _Nonnull sender) {
+        NSLog(@"12");
+        NSDictionary *dic = [FLArchive readArchiveDataWithType:self.currentType];
+        NSArray *arr = [dic allValues];
+        NSArray *arr1 = [arr lastObject];
+        for (FLSSQModel *model in arr1) {
+            [FLEasyExpiry getExpriyInfoBy:model withResult:self.ssqModel];
+        }
+    }];
+
+    [self addGestureRecognizer:get];
 }
 
 - (void)costomUIWithView:(NSArray *)viewArr{
@@ -27,7 +38,9 @@
     NSString *type = dic[@"gameEn"];
     if ([type isEqualToString:@"ssq"]) {
         self.lotteryName.text          = @"双色球";
+        self.currentType = LotteryTypeSSQ;
         FLSSQModel *model              = [[dic[@"awardNo"] removeChar] conversionToSSQ];
+        self.ssqModel = model;
         self.sixthItem.backgroundColor = RGBA(205, 0, 42, 1);
         self.firstItem.text            = [model.red_1 numberToString];
         self.secondItem.text           = [model.red_2 numberToString];
@@ -38,7 +51,9 @@
         self.seventhItem.text          = [model.blue_1 numberToString];
     }else if ([type isEqualToString:@"dlt"]){
         self.lotteryName.text          = @"大乐透";
+        self.currentType = LotteryTypeDLT;
         FLDLTModel *model              = [[dic[@"awardNo"] removeChar] conversionToDLT];
+        self.dltModel = model;
         self.sixthItem.backgroundColor = [UIColor blueColor];
         self.firstItem.text            = [model.red_1 numberToString];
         self.secondItem.text           = [model.red_2 numberToString];

@@ -22,6 +22,10 @@
 #define TICK   NSDate *startTime = [NSDate date];
 #define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow]);
 
-
+typedef NS_ENUM(NSInteger ,LotteryType){
+    LotteryTypeSSQ,
+    LotteryTypeDLT,
+    LotteryTypeNum3
+};
 
 #endif /* Macros_h */

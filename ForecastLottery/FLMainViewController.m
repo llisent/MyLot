@@ -26,16 +26,6 @@
     [self creatCostomUI];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [[SMNetWorkManager sharedInstence]getLottoryWithType:@"ssq" Success:^(long status, NSString *err, NSArray *arr) {
-        for (NSDictionary *dic in arr) {
-            NSString *code = dic[@"openCode"];
-            FLSSQModel *model = [code conversionToSSQ];
-            NSLog(@"%@",[model.red_1 numberToString]);
-        }
-    }];
-}
-
 - (void)creatCostomUI{
     self.view.backgroundColor             = [UIColor colorWithRed:0.188 green:0.596 blue:0.918 alpha:1.000];
     self.lotteryTableView.backgroundColor = [UIColor clearColor];
@@ -83,6 +73,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    if (self.lotteryArray.count != 0) {
+        BOOL flag = [FLArchive archiveDataWithArray:self.lotteryArray lotteryType:LotteryTypeSSQ];
+        NSLog(@"%d",flag);
+    }
+
 }
 
 /*

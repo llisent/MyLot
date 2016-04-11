@@ -13,7 +13,6 @@
 
 + (void)getSSQLotteryNumWithCount:(NSInteger)count
                       returnBlock:(void (^)(NSArray *))success{
-    TICK
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:count];
     NSMutableArray *redSet = [NSMutableArray arrayWithCapacity:33];
     //创建模型池
@@ -60,7 +59,6 @@
             [result addObject:model];
         }
         success(result);
-        TOCK
     });
     
 }

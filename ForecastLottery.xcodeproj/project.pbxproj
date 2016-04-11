@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		12A7298DA977F3FA14FD36B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F818FF9DB3B543E62CE48A3E /* libPods.a */; };
+		6A32AED91CBB44F6002141C6 /* 流程分析 in Resources */ = {isa = PBXBuildFile; fileRef = 6A32AED81CBB44F6002141C6 /* 流程分析 */; };
+		6A32AEE01CBB515B002141C6 /* FLArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A32AEDF1CBB515B002141C6 /* FLArchive.m */; };
+		6A32AEE51CBB8AC8002141C6 /* FLDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A32AEE41CBB8AC8002141C6 /* FLDetailView.m */; };
+		6A32AEE71CBB8AD3002141C6 /* FLDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A32AEE61CBB8AD3002141C6 /* FLDetailView.xib */; };
+		6A32AEEB1CBB8F3C002141C6 /* FLArchiveListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A32AEE91CBB8F3C002141C6 /* FLArchiveListCell.m */; };
+		6A32AEEC1CBB8F3C002141C6 /* FLArchiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A32AEEA1CBB8F3C002141C6 /* FLArchiveListCell.xib */; };
 		6A40F4EA1CB50B1B0044A62A /* FLDLTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A40F4E91CB50B1B0044A62A /* FLDLTModel.m */; };
 		6A40F4ED1CB50BD00044A62A /* FLGainDLT.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A40F4EC1CB50BD00044A62A /* FLGainDLT.m */; };
 		6A40F4F21CB510CE0044A62A /* FLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A40F4F01CB510CE0044A62A /* FLMainViewController.m */; };
@@ -41,6 +47,15 @@
 
 /* Begin PBXFileReference section */
 		224B6888F6356D7D721341E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6A32AED81CBB44F6002141C6 /* 流程分析 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "流程分析"; sourceTree = "<group>"; };
+		6A32AEDE1CBB515B002141C6 /* FLArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLArchive.h; sourceTree = "<group>"; };
+		6A32AEDF1CBB515B002141C6 /* FLArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLArchive.m; sourceTree = "<group>"; };
+		6A32AEE31CBB8AC8002141C6 /* FLDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDetailView.h; sourceTree = "<group>"; };
+		6A32AEE41CBB8AC8002141C6 /* FLDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDetailView.m; sourceTree = "<group>"; };
+		6A32AEE61CBB8AD3002141C6 /* FLDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLDetailView.xib; sourceTree = "<group>"; };
+		6A32AEE81CBB8F3C002141C6 /* FLArchiveListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLArchiveListCell.h; sourceTree = "<group>"; };
+		6A32AEE91CBB8F3C002141C6 /* FLArchiveListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLArchiveListCell.m; sourceTree = "<group>"; };
+		6A32AEEA1CBB8F3C002141C6 /* FLArchiveListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLArchiveListCell.xib; sourceTree = "<group>"; };
 		6A40F4E81CB50B1B0044A62A /* FLDLTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDLTModel.h; sourceTree = "<group>"; };
 		6A40F4E91CB50B1B0044A62A /* FLDLTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDLTModel.m; sourceTree = "<group>"; };
 		6A40F4EB1CB50BD00044A62A /* FLGainDLT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLGainDLT.h; sourceTree = "<group>"; };
@@ -108,6 +123,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A32AEDA1CBB4F10002141C6 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				6A32AEDE1CBB515B002141C6 /* FLArchive.h */,
+				6A32AEDF1CBB515B002141C6 /* FLArchive.m */,
+			);
+			name = Archive;
+			sourceTree = "<group>";
+		};
+		6A32AEE21CBB8989002141C6 /* ResultConstomView */ = {
+			isa = PBXGroup;
+			children = (
+				6A32AEE31CBB8AC8002141C6 /* FLDetailView.h */,
+				6A32AEE41CBB8AC8002141C6 /* FLDetailView.m */,
+				6A32AEE61CBB8AD3002141C6 /* FLDetailView.xib */,
+			);
+			name = ResultConstomView;
+			sourceTree = "<group>";
+		};
 		6A40F4EE1CB510B60044A62A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,10 +166,12 @@
 		6A52393C1CB6065B0095F3B1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6A32AEDA1CBB4F10002141C6 /* Archive */,
 				DD7904E21CB8A2B000C151B7 /* OtherTools */,
 				DD7904E11CB8A29000C151B7 /* CheckResult */,
 				6A5AF47A1CB4EE3000DE1947 /* GainLottery */,
 				6AC66B551CB7BB440058DEF5 /* File */,
+				6A32AED81CBB44F6002141C6 /* 流程分析 */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -232,6 +268,7 @@
 		6AB5B3A51CB517CE00EE14E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6A32AEE21CBB8989002141C6 /* ResultConstomView */,
 				6AB5B3A61CB517E800EE14E4 /* TableViewCell */,
 			);
 			name = Views;
@@ -249,6 +286,9 @@
 				DD7904E31CB8A54000C151B7 /* FLLotteryResultCell.h */,
 				DD7904E41CB8A54000C151B7 /* FLLotteryResultCell.m */,
 				DD7904E51CB8A54000C151B7 /* FLLotteryResultCell.xib */,
+				6A32AEE81CBB8F3C002141C6 /* FLArchiveListCell.h */,
+				6A32AEE91CBB8F3C002141C6 /* FLArchiveListCell.m */,
+				6A32AEEA1CBB8F3C002141C6 /* FLArchiveListCell.xib */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -383,13 +423,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A5AF4721CB4EDA100DE1947 /* LaunchScreen.storyboard in Resources */,
+				6A32AEE71CBB8AD3002141C6 /* FLDetailView.xib in Resources */,
 				6AB5B3AB1CB5199D00EE14E4 /* FLSSQCell.xib in Resources */,
 				DD7904E71CB8A54000C151B7 /* FLLotteryResultCell.xib in Resources */,
+				6A32AED91CBB44F6002141C6 /* 流程分析 in Resources */,
 				6A5AF46F1CB4EDA100DE1947 /* Assets.xcassets in Resources */,
 				6A5AF46D1CB4EDA100DE1947 /* Main.storyboard in Resources */,
 				6A52979A1CB7569E00580DD4 /* FLDLTCell.xib in Resources */,
 				6A40F4F31CB510CE0044A62A /* FLMainViewController.xib in Resources */,
 				6A52979F1CB7575000580DD4 /* FLSettingViewController.xib in Resources */,
+				6A32AEEC1CBB8F3C002141C6 /* FLArchiveListCell.xib in Resources */,
 				6AC66B511CB7B3290058DEF5 /* FLLotteryResultViewController.xib in Resources */,
 				6AC66B561CB7BB440058DEF5 /* File in Resources */,
 			);
@@ -456,13 +499,16 @@
 				6A5AF4811CB4EF3700DE1947 /* FLSSQModel.m in Sources */,
 				6AC66B491CB788950058DEF5 /* SMNetWorkManager.m in Sources */,
 				6A5297991CB7569E00580DD4 /* FLDLTCell.m in Sources */,
+				6A32AEEB1CBB8F3C002141C6 /* FLArchiveListCell.m in Sources */,
 				6AC66B541CB7B4C80058DEF5 /* FLEasyExpiry.m in Sources */,
 				6A40F4ED1CB50BD00044A62A /* FLGainDLT.m in Sources */,
 				DD7904E61CB8A54000C151B7 /* FLLotteryResultCell.m in Sources */,
 				6A5AF46A1CB4EDA100DE1947 /* ViewController.m in Sources */,
+				6A32AEE01CBB515B002141C6 /* FLArchive.m in Sources */,
 				6AC66B4C1CB78C2C0058DEF5 /* NSString+FLConversionToModel.m in Sources */,
 				6A5AF4671CB4EDA100DE1947 /* AppDelegate.m in Sources */,
 				6A52979E1CB7575000580DD4 /* FLSettingViewController.m in Sources */,
+				6A32AEE51CBB8AC8002141C6 /* FLDetailView.m in Sources */,
 				6A5AF47D1CB4EE7600DE1947 /* FLGainSSQ.m in Sources */,
 				6A5AF4641CB4EDA100DE1947 /* main.m in Sources */,
 				6AC66B501CB7B3290058DEF5 /* FLLotteryResultViewController.m in Sources */,
@@ -584,7 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = /Users/llisent/MyLot/ForecastLottery/System/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/mrr/MyLot/ForecastLottery/System/PrefixHeader.pch;
 				INFOPLIST_FILE = ForecastLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -599,7 +645,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = /Users/llisent/MyLot/ForecastLottery/System/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/mrr/MyLot/ForecastLottery/System/PrefixHeader.pch;
 				INFOPLIST_FILE = ForecastLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

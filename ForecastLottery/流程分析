@@ -1,0 +1,9 @@
+用户首页生成号码文件
+EG
+NSArray *arr = @[model1,model2,model3,model4,model5];
+此组号码应该与保存的即时时间作为key相对应
+nsdictionary *dic1 = @{@"时间":arr};
+nsdictionary *dic2 = @{@"时间":arr};
+nsdictionary *dic3 = @{@"时间":arr};
+nsdictionary *dic4 = @{@"时间":arr};
+nsdictionary *dic5 = @{@"时间":arr};

@@ -8,12 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger ,LotteryType){
-    LotteryTypeSSQ,
-    LotteryTypeDLT,
-    LotteryTypeNum3
-};
-
 @interface FLMainTools : NSObject
 
 @property (nonatomic, assign)LotteryType currentType;

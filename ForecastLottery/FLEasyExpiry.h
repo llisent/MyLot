@@ -12,6 +12,6 @@
 
 @interface FLEasyExpiry : NSObject
 
-- (void)getExpriyInfoBy:(FLSSQModel *)selfModel withResult:(FLSSQModel *)resultModel;
++ (void)getExpriyInfoBy:(FLSSQModel *)selfModel withResult:(FLSSQModel *)resultModel;
 
 @end
